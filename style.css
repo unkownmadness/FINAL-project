@@ -1,0 +1,258 @@
+body {
+    font-family: sans-serif;
+    background-color: #ffe5e5; /* very light red background */
+    color: #300000; /* dark text for readability */
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVIGATION */
+nav {
+    display: flex;
+    justify-content: flex-start;
+    background-color: #ffe5e5; /* soft teal for contrast */
+    padding: 15px 30px;
+    border-bottom: 10px dashed crimson;
+}
+
+nav a {
+    background-color: crimson;
+    color: white;
+    border-radius: 15px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-right: 15px;
+}
+
+nav a:hover {
+    background-color: darkred;
+    transform: scale(1.1);
+}
+
+h1 {
+    text-align: center;
+}
+
+/* CONTAINER */
+.container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* DETAILS */
+.details .content-wrapper {
+    display: flex;
+    gap: 30px;
+    /*flex-wrap: wrap;*/
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    border-radius: 25px;
+    box-shadow: 4px 5px 6px 10px crimson;
+}
+
+/* Style personal-details */
+.personal-details {
+    flex: 1;
+}
+
+/* Style the image */
+.my-image img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 3px solid crimson;
+    transition: transform 0.3s ease;
+}
+
+.my-image img:hover {
+    transform: scale(1.05);
+}
+
+
+/* SUBJECTS */
+.subjects {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    /*flex-wrap: wrap;*/
+}
+
+.subject {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 35px;
+    background-color: #fffafa;
+    text-align: center;
+    padding: 15px;
+    box-shadow: 4px 5px 6px crimson;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.subject:hover {
+    transform: scale(1.05);
+    background-color: #ffeaea;
+}
+
+.subject img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+    background-color: #e0f7f7;
+    border-radius: 50%;
+}
+
+.subject p {
+    font-weight: bold;
+    color: crimson;
+    margin: 5px 0;
+}
+
+.subject span {
+    font-size: 0.9em;
+}
+
+/* GENERAL TYPOGRAPHY */
+h1 {
+    color: crimson;
+}
+
+.description {
+    font-weight: bold;
+    color: #900;
+}
+
+/* PAGE TITLE */
+.page-title {
+    text-align: center;
+    color: crimson;
+    margin: 40px 0 20px;
+    font-size: 2.5em;
+    transition: transform 0.3s ease;
+}
+
+.page-title:hover {
+    transform: scale(1.05);
+}
+
+/* PROJECTS SECTION */
+.projects {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: center;
+    gap: 25px;
+    padding: 20px 40px;
+}
+
+/* PROJECT CARD */
+.project-card {
+    width: 250px;
+    background-color: #fff3f3;
+    border: 2px solid crimson;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s, background-color 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    background-color: #ffe5e5;
+}
+
+.project-card h2 {
+    color: darkred;
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.project-card p {
+    font-size: 0.95em;
+    margin-bottom: 15px;
+}
+
+/* BUTTON STYLING */
+.project-card a {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s;
+}
+
+.project-card a:hover {
+    background-color: darkred;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    text-align: center;
+    padding: 20px;
+    border-top: 10px dashed crimson;
+}
+
+footer a {
+    color: crimson;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: darkred;
+}
+
+/* INFO PAGE SECTION */
+.info-section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px 30px;
+    background-color: #fff3f3;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(241, 57, 57, 0.15);
+    transition: transform 0.3s;
+}
+
+.info-section:hover {
+    transform: scale(1.01);
+}
+
+.info-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.info-section li {
+    margin-bottom: 12px;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/* TAG STYLING LIKE KEYBOARD */
+.html-tag {
+    background-color: #eee;
+    font-family: monospace;
+    padding: 3px 8px;
+    border-radius: 5px;
+    box-shadow: inset 0 -2px 0 #ccc;
+    transition: background-color 0.3s ease;
+}
+
+.html-tag:hover {
+    background-color: #ddd;
+}
